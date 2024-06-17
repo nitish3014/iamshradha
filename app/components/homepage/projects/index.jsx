@@ -1,37 +1,61 @@
-import { projectsData } from '@/utils/data/projects-data';
-import ProjectCard from './project-card';
+'use client';
+import React from "react";
+import ProjectCard from "./project-card";
+import Particle from "../../Particle";
 
-const Projects = () => {
-
+function Projects() {
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
-      <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
-        <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
-            PROJECTS
-          </span>
-          <span className="w-full h-[2px] bg-[#1a1443]"></span>
+    <div className="relative bg-[#0f0c18] pt-40 pb-10" style={{ backgroundImage: 'var(--section-background-color)' }}>
+    <Particle />
+    <div className="container mx-auto py-10">
+      <h1 className="project-heading text-4xl font-bold text-center text-white mb-6">
+        My Recent <strong className="text-purple-500">Works</strong>
+      </h1>
+      <p className="text-white text-center mb-8">
+        Here are a few projects I've worked on recently.
+      </p>
+      <div className="flex flex-wrap justify-center">
+        <div className="w-full md:w-1/3 p-2 pt-20 pb-20 pl-10 pr-10 h-auto">
+          <ProjectCard
+            imgPath="/chatify.png"
+            alt="Chatify Image"
+            isBlog={false}
+            title="Chatify"
+            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+            ghLink="https://github.com/soumyajit4419/Chatify"
+            demoLink="https://chatify-49.web.app/"
+          />
         </div>
-      </div>
+        <div className="w-full md:w-1/3 p-2 pt-20 pb-20 pl-10 pr-10 h-auto">
+          <ProjectCard
+            imgPath="/chatify.png"
+            alt="Chatify Image"
+            isBlog={false}
+            title="Chatify"
+            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+            ghLink="https://github.com/soumyajit4419/Chatify"
+            demoLink="https://chatify-49.web.app/"
+          />
+        </div>
+        <div className="w-full md:w-1/3 p-2 pt-20 pb-20 pl-10 pr-10 h-auto">
+          <ProjectCard
+            imgPath="/chatify.png"
+            alt="Chatify Image"
+            isBlog={false}
+            title="Chatify"
+            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+            ghLink="https://github.com/soumyajit4419/Chatify"
+            demoLink="https://chatify-49.web.app/"
+          />
+        </div>
+     
 
-      <div className="pt-24">
-        <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 4).map((project, index) => (
-            <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
-            >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
-              </div>
-            </div>
-          ))}
+          
+          
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Projects;
