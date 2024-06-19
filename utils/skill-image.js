@@ -72,6 +72,13 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
+import prometheus from '/public/svg/skills/prometheus.svg';
+import grafana from '/public/svg/skills/grafana.svg';
+import kubernetes from '/public/svg/skills/kubernetes.svg';
+import github from '/public/svg/skills/github.svg';
+
+import sonarqube from '/public/svg/skills/sonarqube.svg';
+import jenkins from '/public/svg/skills/jenkins.svg';
 
 
 export const skillsImage = (skill) => {
@@ -85,6 +92,14 @@ export const skillsImage = (skill) => {
       return photoshop;
     case 'docker':
       return docker;
+    case 'kubernetes':
+      return kubernetes;
+    case 'prometheus':
+      return prometheus;
+    case 'grafana':
+      return grafana;
+    case 'github':
+      return github;
     case 'illustrator':
       return illustrator;
     case 'adobe xd':
@@ -93,6 +108,10 @@ export const skillsImage = (skill) => {
       return afterEffects;
     case 'css':
       return css;
+    case 'jenkins':
+      return jenkins;
+    case 'sonarqube':
+      return sonarqube;
     case 'angular':
       return angular;
     case 'javascript':

@@ -6,12 +6,12 @@ export const personalData = {
   email: 'shradha3025@gmail.com',
   phone: '+917303030702',
   address: 'Navi Mumbai ,Maharashtra ,India ',
-  github: 'https://github.com/shradha',
-  facebook: '#',
-  linkedIn: 'https://www.linkedin.com/in/shradha',
+  github: 'https://github.com/Shradha3001',
+  instagram: 'https://www.instagram.com/___.shradhaaa.___30?igsh=MTBoNmx6cGdrazNieg%3D%3D',
+  linkedIn: 'https://www.linkedin.com/in/shradha-magdum30',
   twitter: 'https://twitter.com/shradha',
   stackOverflow: 'https://stackoverflow.com/users/shradha',
-  leetcode: "https://leetcode.com/shradha/",
+  whatsapp: "https://wa.me/917303030702",
   devUsername: "shradha",
   resume: "#"
 }
