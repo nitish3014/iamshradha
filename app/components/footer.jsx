@@ -1,7 +1,11 @@
 // @flow strict
+import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { CgGitFork } from "react-icons/cg";
+import { FaInstagram, FaTwitterSquare } from 'react-icons/fa';
 import { IoStar } from "react-icons/io5";
+import { SiWhatsapp } from 'react-icons/si';
 
 function Footer() {
   return (
@@ -14,22 +18,34 @@ function Footer() {
           <p className="text-sm">
             © Developer Portfolio by <Link target="_blank" href="https://www.linkedin.com/in/shradha/" className="text-[#16f2b3]"> shradha</Link>
           </p>
-          <div className="flex items-center gap-5">
+          <div className=" flex items-center gap-5">
             <Link
-              target="_blank"
-              href="https://github.com/shradha7388/developer-portfolio"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
+              href={personalData.github}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <IoStar />
-              <span>Star</span>
+              <BsGithub size={30} />
             </Link>
             <Link
-              target="_blank"
-              href="https://github.com/shradha7388/developer-portfolio/fork"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
+              href={personalData.linkedIn}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <CgGitFork />
-              <span>Fork</span>
+              <BsLinkedin size={30} />
+            </Link>
+            <Link
+              href={personalData.instagram}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
+            >
+              <FaInstagram size={30} />
+            </Link>
+            <Link
+              href={personalData.whatsapp}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
+            >
+              <SiWhatsapp size={30} />
             </Link>
           </div>
         </div>

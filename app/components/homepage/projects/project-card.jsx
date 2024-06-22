@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import Image from 'next/image';
+import Link from "next/link";
 
 function ProjectCard(props) {
   const [imgError, setImgError] = useState(false);
 
   return (
-    <div className="relative max-w-sm rounded overflow-hidden shadow-lg bg-[#0d1224] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl  hover:border-2 hover:border-blue-500">
+    <div className="relative hover:scale-[1.15] cursor-pointer max-w-sm  rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 hover:border-violet-500 transition-all duration-500">
       <div className="overflow-hidden">
         {imgError ? (
           <div className="w-full h-72 flex items-center justify-center bg-gray-200">
@@ -30,24 +31,14 @@ function ProjectCard(props) {
           {props.description}
         </p>
         <div className="mt-4">
-          <a
-            className="inline-flex items-center px-4 py-2 bg-blue-500 text-white font-semibold text-sm rounded-md hover:bg-blue-700 transition-colors duration-300"
-            href={props.ghLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsGithub className="mr-2" /> {props.isBlog ? "Blog" : "GitHub"}
-          </a>
-          {!props.isBlog && props.demoLink && (
-            <a
-              className="inline-flex items-center px-4 py-2 ml-4 bg-blue-500 text-white font-semibold text-sm rounded-md hover:bg-blue-700 transition-colors duration-300"
-              href={props.demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
+          
+            <Link className="flex items-center justify-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={props.ghLink}
             >
-              <CgWebsite className="mr-2" /> Demo
-            </a>
-          )}
+              <BsGithub className="font-black text-2xl" /> 
+              
+            </Link>
+            
+       
         </div>
       </div>
     </div>
