@@ -20,7 +20,7 @@ function Projects() {
           Here are a few projects I&apos;ve worked on recently.
         </p>
         <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-1/3 pt-10 pb-10 pl-10 pr-10 h-auto">
+          <div className="w-full md:w-1/3 pt-10 pb-10 md:pl-10 md:pr-10 h-auto">
             <ProjectCard
               imgPath="/chatify.png"
               alt="Chatify Image"
@@ -31,7 +31,7 @@ function Projects() {
               demoLink="#/"
             />
           </div>
-          <div className="w-full md:w-1/3 p-2 pt-10 pb-10 pl-10 pr-10 h-auto">
+          <div className="w-full md:w-1/3 p-2 pt-10 pb-10 md:pl-10 md:pr-10 h-auto">
             <ProjectCard
               imgPath="/chatify.png"
               alt="Chatify Image"
@@ -42,7 +42,7 @@ function Projects() {
               demoLink="https://chatify-49.web.app/"
             />
           </div>
-          <div className="w-full md:w-1/3 p-2 pt-10 pb-10 pl-10 pr-10 h-auto">
+          <div className="w-full md:w-1/3 p-2 pt-10 pb-10 md:pl-10 md:pr-10 h-auto">
             <ProjectCard
               imgPath="/chatify.png"
               alt="Chatify Image"
