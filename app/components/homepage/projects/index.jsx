@@ -42,7 +42,7 @@ function Projects() {
               demoLink="#"
             />
           </div>
-          <div className="w-full md:w-1/3 p-2 pt-10 pb-10 md:pl-10 md:pr-10 h-auto">
+{/*           <div className="w-full md:w-1/3 p-2 pt-10 pb-10 md:pl-10 md:pr-10 h-auto">
             <ProjectCard
               imgPath="/chatify.png"
               alt="Chatify Image"
@@ -51,7 +51,7 @@ function Projects() {
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
               ghLink="https://github.com/Shradha3001/Auto-Orchestration"
               demoLink="https://chatify-49.web.app/"
-            />
+            /> */}
           </div>
         </div>
       </div>
