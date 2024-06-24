@@ -42,7 +42,7 @@ function Projects() {
               demoLink="#"
             />
           </div>
-          </div>
+          
         </div>
       </div>
     </div>
